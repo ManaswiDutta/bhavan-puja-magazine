@@ -13,16 +13,35 @@ body {
 }
 
 /* Header */
-header {
-  text-align: center;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #ddd;
-}
+
 
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.header-top-left img {
+  width: 60px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.header-top-left h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
 
 
 
@@ -85,10 +104,12 @@ header {
   padding: 3rem 1rem;
   color: white;
   background-image: 
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), 
     url('media/maa.png');
   background-size: cover;
   background-position: center;
+  height: 500px;
+  position: relative;
 }
 
 nav ul {
@@ -114,6 +135,21 @@ nav a:hover,
 nav a.active {
   background-color: #f0f0f0; /* light grey hover */
   border-radius: 4px;
+}
+
+.header-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+header nav {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
