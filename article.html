@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Prayash@2025 </title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ----- HERO SECTION ----- */
+    .hero {
+      background: linear-gradient(to bottom, #fff6e5, #ffffff);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 4px solid black; /* strong separation from above */
+      border-bottom: 4px solid black; /* strong separation from below */
+      max-width: 2000px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: #2e2e2e;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      max-width: 1890px;
+      margin: 0.8rem auto;
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+
+    /* ----- ARTICLE GRID ----- */
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      padding: 3rem 2rem;
+      max-width: 1300px;
+      margin: auto;
+    }
+    .articles article {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .articles article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .articles img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .articles article:hover img {
+      transform: scale(1.05);
+    }
+    .articles h3 {
+      font-size: 1.4rem;
+      margin: 1rem;
+      color: #2e2e2e;
+    }
+    .articles p {
+      margin: 0 1rem 1.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f9f9f9;
+      color: #777;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top-left">
+    <img src="media/rkm-removebg-preview.png" alt="RKMVM Logo">
+    <h2>Ramakrishna Mission Vidyamandira</h2>
+  </div>
+
+  <div class="header-center-text">
+    <h2>শারদীয় পত্রিকা</h2>
+    <h1>প্রয়াশ - বিবেক ভবন</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">This Year</a></li>
+      <li><a href="previous.html">Previous Year</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+<main>
+
+  <h2>প্রবন্ধ</h2>
+  <section class="articles">
+      <a href = "prithwi.html" ><article>
+      <img src="media/puja.webp" alt="Article 5">
+      <h3>বিবর্তনের দৃষ্টিতে আনন্দ</h3>
+      <p>পৃথ্বীরাজ মল্লিক, স্নাতক প্রথম বর্ষ, বিভাগ: প্রাণীবিদ্যা</p>
+      </article></a>
+
+      <a href = "aditya.html" ><article>
+      <img src="media/happiness.webp" alt="Article 5">
+      <h3>Imagine: Happiness</h3>
+      <p>Aranya Mondal, UG-1, Department of English</p>
+      </article></a>
+
+
+      <a href = "ananda.html" ><article>
+      <img src="media/uma.png" alt="Article 5">
+      <h3>পূজা:এক আনন্দভাণ্ডার</h3>
+      <p>কৃশানু মণ্ডল,স্নাতক প্রথম বর্ষ, বিভাগ:প্রাণীবিদ্যা</p>
+      </article></a>
+
+    
+    
+    
+
+
+    
+    
+    
+    <!-- <article>
+      <img src="Maglev.webp" alt="Article 4">
+      <h3>SC Maglev Technology</h3>
+      <p>New age technology for faster transport...</p>
+    </article>
+    <article>
+      <img src="Maglev.webp" alt="Article 4">
+      <h3>SC Maglev Technology</h3>
+      <p>New age technology for faster transport...</p>
+    </article>
+    <article>
+      <img src="Maglev.webp" alt="Article 4">
+      <h3>SC Maglev Technology</h3>
+      <p>New age technology for faster transport...</p>
+    </article>  -->
+  </section>
+
+
+</main>
+
+<footer>
+  &copy; 2025 প্রয়াশ - বিবেক ভবন
+</footer>
+
+</body>
+</html>

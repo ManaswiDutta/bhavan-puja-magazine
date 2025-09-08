@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prayash@2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Header Styling */
+    header {
+      background: url('media/maa.png') no-repeat center center;
+      background-size: 100% auto;
+      height: 500px;
+      width: auto;
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+    .header-top-left {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+    .header-top-left img {
+      width: 60px;
+      height: auto;
+      margin-right: 1rem;
+    }
+    .header-top-left h2 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .header-center-text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .header-center-text h2 {
+      color: #fff;
+      margin: 0.5rem 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .header-center-text h1 {
+      color: #fff;
+      margin: 0.5rem 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    header nav {
+      text-align: center;
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 0;
+    }
+    header nav ul li {
+      display: inline-block;
+      margin: 0;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: #ffffff;
+      padding: 0.7rem 1.6rem;
+      border-radius: 6px;
+      border: 2px solid #ffffff;
+      transition: none;
+      text-shadow: none;
+      display: inline-block;
+    }
+    header nav ul li a:hover {
+      color: #2e2e2e;
+      background: #ffffff;
+      border-color: #ffffff;
+      box-shadow: none;
+    }
+    header nav ul li a.active {
+      color: #2e2e2e;
+      background: #fffafa;
+      border-color: #ffd992;
+      font-weight: 700;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to bottom, #ffd992, #ffffff);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+      max-width: 2000px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      color: #2e2e2e;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      max-width: 1890px;
+      margin: 0.8rem auto;
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    
+
+    /* Article Grid */
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      padding: 1rem 2rem;
+      max-width: 1300px;
+      margin: auto;
+    }
+    .articles article {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .articles article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .articles img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .articles article:hover img {
+      transform: scale(1.05);
+    }
+    .articles h3 {
+      font-size: 1.4rem;
+      margin: 1rem;
+      color: #2e2e2e;
+    }
+    .articles p {
+      margin: 0 1rem 1.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Dropdown Styling */
+    details {
+      max-width: 1300px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    summary {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2e2e2e;
+      cursor: pointer;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    summary:hover {
+      background: #e0e0e0;
+    }
+    details[open] summary {
+      background: #e0e0e0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f9f9f9;
+      color: #777;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+    }
+
+    .hero {
+      padding: 40px;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: flex-start; /* top aligned */
+      gap: 30px;
+    }
+
+    .hero-text {
+      flex: 2; /* bigger space */
+    }
+
+    .hero-image {
+      flex: 1; /* smaller space */
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; /* optional */
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-top-left">
+    <img src="media/rkm-removebg-preview.png" alt="RKMVM Logo">
+    <h2>Ramakrishna Mission Vidyamandira</h2>
+  </div>
+
+  <div class="header-center-text">
+    <h2>শারদীয় পত্রিকা</h2>
+    <h1>প্রয়াশ - বিবেক ভবন</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a class="active" href="index.html">This Year</a></li>
+      <li><a href="previous.html">Previous Year</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>ভূমিকা</h2>
+
+<p>প্রয়াশ হলো বিবেক ভবনের বার্ষিক পূজা দেয়াল পত্রিকা। প্রথম বর্ষের শিক্ষার্থীদের জন্য বরাদ্দকৃত হোস্টেলটি তাদের উৎসাহের বিভিন্ন উদাহরণে পরিপূর্ণ।</p>
+ <P>দুর্গাপূজার কেন্দ্রবিন্দুতে রয়েছে সম্প্রীতির গভীর অনুভূতি। পরিবার এবং বন্ধুবান্ধবরা উৎসব উদযাপন, খাবার ভাগাভাগি এবং আচার-অনুষ্ঠানে অংশগ্রহণের জন্য একত্রিত হয়, যা দৈনন্দিন জীবনের ব্যস্ততার মধ্যে ভেঙে পড়া বন্ধনকে আরও শক্তিশালী করে। ঐক্যের চেতনা স্পষ্ট; মানুষ একে অপরের বাড়িতে বেড়াতে যায়, মিষ্টি বিনিময় করে এবং আশীর্বাদ করে, একই সাথে উৎসবের বৈশিষ্ট্যপূর্ণ প্রাণবন্ত শোভাযাত্রা এবং সাংস্কৃতিক পরিবেশনায় অংশগ্রহণ করে।</p>
+  <p>এই উৎসবে খাবার একটি কেন্দ্রীয় ভূমিকা পালন করে, বাড়িতে এবং সম্প্রদায়ের রান্নাঘরে বিশেষ খাবার তৈরি করা হয়। ঐতিহ্যবাহী বাঙালি মিষ্টি, সুস্বাদু খাবার এবং বিস্তৃত ভোজ উপভোগ করা হয়, যা প্রাচুর্য এবং কৃতজ্ঞতার অনুভূতি জাগিয়ে তোলে। খাবার ভাগাভাগি সৌহার্দ্যের চেতনাকে বাড়িয়ে তোলে, কারণ পরিবারগুলি প্রতিবেশী এবং বন্ধুদের উৎসবে অংশগ্রহণের জন্য আমন্ত্রণ জানায়।</P>
+    </div>
+
+    <div class="hero-image">
+      <img src="media/wallmagimg.jpeg" alt="Durga painting">
+    </div>
+  </div>
+</section>
+  <main>
+    <details>
+      <summary lang="bn">প্রবন্ধ</summary>
+      <section class="articles">
+        <a href="prithwi.html">
+          <article>
+            <img src="media/puja.webp" alt="Article 5">
+            <h3>বিবর্তনের দৃষ্টিতে আনন্দ</h3>
+            <p>পৃথ্বীরাজ মল্লিক, স্নাতক প্রথম বর্ষ, বিভাগ: প্রাণীবিদ্যা</p>
+          </article>
+        </a>
+        <a href="aditya.html">
+          <article>
+            <img src="media/happiness.webp" alt="Article 5">
+            <h3>Imagine: Happiness</h3>
+            <p>Aranya Mondal, UG-1, Department of English</p>
+          </article>
+        </a>
+        <a href="ananda.html">
+          <article>
+            <img src="media/uma.png" alt="Article 5">
+            <h3>পূজা:এক আনন্দভাণ্ডার</h3>
+            <p>কৃশানু মণ্ডল, স্নাতক প্রথম বর্ষ, বিভাগ: প্রাণীবিদ্যা</p>
+          </article>
+        </a>
+      </section>
+    </details>
+
+    <details>
+      <summary lang="bn">কবিতা</summary>
+      <section class="articles">
+        <a href="poetry.html">
+          <article>
+            <img src="media/belur11.jpg" alt="Article 5">
+            <h3>আগমনী :</h3>
+            <p>চিন্ময় মন্ডল, স্নাতক দ্বিতীয় বর্ষ, বাংলা বিভাগ</p>
+          </article>
+        </a>
+        <a href="poetry.html">
+          <article>
+            <img src="media/home.jpg" alt="Article 5">
+            <h3>সারদা আমার দুগ্গা :</h3>
+            <p>সম্পদ সিং, স্নাতক দ্বিতীয় বর্ষ, ইতিহাস বিভাগ</p>
+          </article>
+        </a>
+        <a href="poetry.html">
+          <article>
+            <img src="media/durgapuja12.jpg" alt="Article 5">
+            <h3>কুমারী পূজা :</h3>
+            <p>অর্পণ চক্রবর্তী, দ্বিতীয় বর্ষ, রসায়ন</p>
+          </article>
+        </a>
+      </section>
+    </details>
+  </main>
+
+  <footer>
+  &copy; 2025 প্রয়াশ - বিবেক ভবন
+  </footer>
+</body>
+</html>

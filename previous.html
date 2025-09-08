@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previous Year </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ----- HERO SECTION ----- */
+    .hero {
+      background: linear-gradient(to bottom, #fff6e5, #ffffff);
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #2e2e2e;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ----- ARTICLE GRID ----- */
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      padding: 3rem 2rem;
+      max-width: 1300px;
+      margin: auto;
+    }
+    .articles article {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .articles article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .articles img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .articles article:hover img {
+      transform: scale(1.05);
+    }
+    .articles h3 {
+      font-size: 1.4rem;
+      margin: 1rem;
+      color: #2e2e2e;
+    }
+    .articles p {
+      margin: 0 1rem 1.5rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f9f9f9;
+      color: #777;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+    }
+
+    .year-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .year-links a {
+      text-decoration: none;
+    }
+
+    .year-card {
+      background: linear-gradient(135deg, #fdf1d6, #fff);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .year-card h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .year-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      background: linear-gradient(135deg, #ffe7ba, #fff9f0);
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top-left">
+    <img src="media/rkm-removebg-preview.png" alt="RKMVM Logo">
+    <h2>Ramakrishna Mission Vidyamandira</h2>
+  </div>
+
+  <div class="header-center-text">
+    <h2>Puja Magazine</h2>
+    <h1>Prayash - Vivek Bhavan</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a  href="index.html">This Year</a></li>
+      <li><a class="active" href="previous.html">Previous Year</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>আগের বছরের প্রয়াশ</h2>
+  <p>A curated collection of the most notable stories and achievements from the past year, preserved for reflection and inspiration.</p>
+</section>
+
+<main class="year-links">
+  <a href="https://thevivekbhavanmagazine2024.netlify.app">
+    <div class="year-card">
+      <h3>Digital Wallmagazine 2024</h3>
+    </div>
+  </a>
+  <a href="https://vivekbhavan.netlify.app/">
+    <div class="year-card">
+      <h3>Digital Wallmagazine 2023</h3>
+    </div>
+  </a>
+</main>
+
+
+<footer>
+  &copy; 2025 প্রয়াশ - বিবেক ভবন
+</footer>
+
+</body>
+</html>
